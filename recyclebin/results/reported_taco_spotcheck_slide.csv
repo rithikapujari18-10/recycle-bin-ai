@@ -1,0 +1,13 @@
+image,true_label,pred_label,correct
+1,metal,cardboard,False
+2,paper,cardboard,False
+3,plastic,cardboard,False
+4,plastic,metal,False
+5,glass,metal,False
+6,plastic,metal,False
+7,plastic,plastic,True
+8,plastic,metal,False
+9,plastic,metal,False
+10,plastic,plastic,True
+11,plastic,glass,False
+12,plastic,cardboard,False

@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recyclebin"
+version = "0.1.0"
+description = "Transfer learning vs. a from-scratch CNN for household waste classification (TrashNet, TACO spot-check)"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]

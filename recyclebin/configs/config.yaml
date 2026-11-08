@@ -1,0 +1,35 @@
+# !! Values marked CONFIRM are placeholders. Replace them with the exact settings
+# !! used in the team's original notebook so the repository reproduces the paper.
+seed: 42                    # CONFIRM
+classes: [cardboard, glass, metal, paper, plastic, trash]
+
+data:
+  trashnet_dir: data/trashnet/dataset-resized   # one sub-folder per class
+  splits_dir: results/splits
+  val_frac: 0.15            # CONFIRM
+  test_frac: 0.15           # CONFIRM (380/2527 is ~15%, matching the reported test size)
+
+image:
+  size: [224, 224]          # CONFIRM
+  batch_size: 32            # CONFIRM
+
+augmentation:               # CONFIRM (applied to the training set only)
+  flip: horizontal
+  rotation: 0.1
+  zoom: 0.1
+
+baseline:
+  learning_rate: 0.001      # CONFIRM
+  epochs: 30                # CONFIRM
+  early_stopping_patience: 5
+
+mobilenetv2:
+  learning_rate: 0.0001     # CONFIRM
+  epochs: 20                # CONFIRM
+  freeze_backbone: true     # CONFIRM: frozen vs fine-tuned layers
+  dropout: 0.0              # CONFIRM
+  early_stopping_patience: 5
+
+output:
+  models_dir: models
+  results_dir: results

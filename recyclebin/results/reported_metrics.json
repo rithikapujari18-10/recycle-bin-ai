@@ -1,0 +1,5 @@
+{
+  "source": "RecycleBin presentation, slide 6 (values as reported; baseline CNN confusion matrix not available)",
+  "baseline":    {"accuracy": 0.53, "precision_macro": 0.57, "recall_macro": 0.56, "f1_macro": 0.50},
+  "mobilenetv2": {"accuracy": 0.83, "precision_macro": 0.80, "recall_macro": 0.81, "f1_macro": 0.80, "correct": 317, "n": 380}
+}
