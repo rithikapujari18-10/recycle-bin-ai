@@ -177,13 +177,6 @@ The model predicts a **material category**, not a local recycling rule. Disposal
 condition or mixed composition, so output should be shown with a confidence level and combined with location-specific rules. If deployed
 with a camera, process images on-device where possible and avoid storing user photos by default. Respect each dataset's terms of use.
 
-## Roadmap
-
-- [ ] Add ResNet for a three-way model comparison
-- [ ] Expand real-world testing well beyond 12 images (TACO, RealWaste)
-- [ ] Calibrate confidence scores and flag low-confidence predictions
-- [ ] Grad-CAM explanations to check for background reliance
-- [ ] Prototype: photo → material → disposal guidance with local rules
 
 ## References
 
